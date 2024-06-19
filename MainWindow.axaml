@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Font.MainWindow"
+        Title="Font">
+  <Window.Resources>
+    <FontFamily x:Key="Fonts1">avares://Font/Tengwar.ttf#Alcarin Tengwar, avares://Font/OpenSans-Regular.ttf#Open Sans</FontFamily>
+    <FontFamily x:Key="Fonts2">avares://Font/OpenSans-Regular.ttf#Open Sans, avares://Font/Tengwar.ttf#Alcarin Tengwar</FontFamily>
+  </Window.Resources>
+  <StackPanel Spacing="10">
+    <Border Background="olive" Height="64">
+      <TextBlock
+        VerticalAlignment="Center"
+        FontFamily="{StaticResource Fonts1}"
+        FontSize="32">
+        Bga bgy -  
+      </TextBlock>
+    </Border>
+    <Border Background="olive" Height="64">
+      <TextBlock
+        VerticalAlignment="Center"
+        FontFamily="{StaticResource Fonts2}"
+        FontSize="32">
+        Bga bgy -  
+      </TextBlock>
+    </Border>
+  </StackPanel>
+</Window>
